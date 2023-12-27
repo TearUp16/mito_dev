@@ -4,31 +4,49 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-   public float Health
+    public float speed = 1f;
+
+    SpriteRenderer spriteRenderer;
+
+    Rigidbody2D rb;
+
+    private Animator animator;
+
+    void Start()
     {
-        set
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void Update()
+    {
+        // Enemy movement logic
+        Vector2 playerPosition = GameObject.FindWithTag("Player").transform.position;
+        Vector2 direction = playerPosition - (Vector2)transform.position;
+        direction.Normalize();
+        GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
+
+        if (movement != Vector2.zero)
         {
-            health = value;
-
-            if (health  > 0)
-            {
-                Defeated ();
-            }
+            // Player is moving
+            animator.SetBool("isMoving", true);
         }
-        get
+        else
         {
-            return health;
+            // Player is idle
+            animator.SetBool("isMoving", false);
         }
-    }
-    public float health = 1;
-
-    public void TakeDamage  (float damage)
-    {
-        Health -= damage;
-    }
-
-    public void Defeated()
-    {
-        Destroy (gameObject);
-    }
+        if (movement.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (movement.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+    }      
 }
