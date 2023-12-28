@@ -4409,16 +4409,28 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+      propertyPath: m_Mass
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_BodyType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_LinearDrag
-      value: 1000
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+      propertyPath: m_AngularDrag
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333881913106229458, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4599443507751612879, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4464,6 +4476,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5430002950154482095, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 4389230023371754991, guid: d0e9fe2a0b5d4ce41ac5126a45b75637, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

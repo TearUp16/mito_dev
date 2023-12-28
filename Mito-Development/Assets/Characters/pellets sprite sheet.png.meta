@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,10 +139,10 @@ TextureImporter:
       name: pellets sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
-        width: 131
-        height: 40
+        x: 6
+        y: 123
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +160,10 @@ TextureImporter:
       name: pellets sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 131
-        y: 120
-        width: 131
-        height: 40
+        x: 135
+        y: 122
+        width: 54
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +181,10 @@ TextureImporter:
       name: pellets sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 262
-        y: 120
-        width: 131
-        height: 40
+        x: 265
+        y: 122
+        width: 73
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +202,10 @@ TextureImporter:
       name: pellets sprite sheet_3
       rect:
         serializedVersion: 2
-        x: 393
-        y: 120
-        width: 131
-        height: 40
+        x: 397
+        y: 122
+        width: 93
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +223,10 @@ TextureImporter:
       name: pellets sprite sheet_4
       rect:
         serializedVersion: 2
-        x: 524
-        y: 120
-        width: 131
-        height: 40
+        x: 530
+        y: 122
+        width: 113
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +244,10 @@ TextureImporter:
       name: pellets sprite sheet_5
       rect:
         serializedVersion: 2
-        x: 655
-        y: 120
-        width: 131
-        height: 40
+        x: 662
+        y: 122
+        width: 124
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +265,10 @@ TextureImporter:
       name: pellets sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 131
-        height: 40
+        x: 18
+        y: 84
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +286,10 @@ TextureImporter:
       name: pellets sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 131
-        y: 80
-        width: 131
-        height: 40
+        x: 166
+        y: 84
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +307,10 @@ TextureImporter:
       name: pellets sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 262
-        y: 80
-        width: 131
-        height: 40
+        x: 315
+        y: 84
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +328,10 @@ TextureImporter:
       name: pellets sprite sheet_9
       rect:
         serializedVersion: 2
-        x: 393
-        y: 80
-        width: 131
-        height: 40
+        x: 467
+        y: 84
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +349,10 @@ TextureImporter:
       name: pellets sprite sheet_10
       rect:
         serializedVersion: 2
-        x: 524
-        y: 80
-        width: 131
-        height: 40
+        x: 620
+        y: 84
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +370,10 @@ TextureImporter:
       name: pellets sprite sheet_11
       rect:
         serializedVersion: 2
-        x: 655
-        y: 80
-        width: 131
-        height: 40
+        x: 769
+        y: 84
+        width: 17
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +391,10 @@ TextureImporter:
       name: pellets sprite sheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 40
-        width: 131
-        height: 40
+        x: 7
+        y: 43
+        width: 34
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +412,10 @@ TextureImporter:
       name: pellets sprite sheet_13
       rect:
         serializedVersion: 2
-        x: 131
-        y: 40
-        width: 131
-        height: 40
+        x: 138
+        y: 41
+        width: 51
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +433,10 @@ TextureImporter:
       name: pellets sprite sheet_14
       rect:
         serializedVersion: 2
-        x: 262
-        y: 40
-        width: 131
-        height: 40
+        x: 269
+        y: 42
+        width: 69
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +454,10 @@ TextureImporter:
       name: pellets sprite sheet_15
       rect:
         serializedVersion: 2
-        x: 393
-        y: 40
-        width: 131
-        height: 40
+        x: 400
+        y: 43
+        width: 90
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +475,10 @@ TextureImporter:
       name: pellets sprite sheet_16
       rect:
         serializedVersion: 2
-        x: 524
-        y: 40
-        width: 131
-        height: 40
+        x: 531
+        y: 43
+        width: 112
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +496,10 @@ TextureImporter:
       name: pellets sprite sheet_17
       rect:
         serializedVersion: 2
-        x: 655
-        y: 40
-        width: 131
-        height: 40
+        x: 662
+        y: 41
+        width: 124
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +517,10 @@ TextureImporter:
       name: pellets sprite sheet_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 131
-        height: 40
+        x: 18
+        y: 4
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +538,10 @@ TextureImporter:
       name: pellets sprite sheet_19
       rect:
         serializedVersion: 2
-        x: 131
-        y: 0
-        width: 131
-        height: 40
+        x: 166
+        y: 4
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +559,10 @@ TextureImporter:
       name: pellets sprite sheet_20
       rect:
         serializedVersion: 2
-        x: 262
-        y: 0
-        width: 131
-        height: 40
+        x: 315
+        y: 4
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,10 +580,10 @@ TextureImporter:
       name: pellets sprite sheet_21
       rect:
         serializedVersion: 2
-        x: 393
-        y: 0
-        width: 131
-        height: 40
+        x: 467
+        y: 4
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +601,10 @@ TextureImporter:
       name: pellets sprite sheet_22
       rect:
         serializedVersion: 2
-        x: 524
-        y: 0
-        width: 131
-        height: 40
+        x: 620
+        y: 4
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +622,10 @@ TextureImporter:
       name: pellets sprite sheet_23
       rect:
         serializedVersion: 2
-        x: 655
-        y: 0
-        width: 131
-        height: 40
+        x: 769
+        y: 4
+        width: 17
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
