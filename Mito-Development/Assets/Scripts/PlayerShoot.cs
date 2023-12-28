@@ -14,8 +14,15 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(_bulletPrefab,
-                transform.position, transform.rotation);
+            // Instantiate(_bulletPrefab,
+            //   transform.position, transform.rotation);
+            Shoot();
         }
+    }
+    void Shoot()
+    {
+        // Instantiate the bullet
+        GameObject bullet = Instantiate(_bulletPrefab, transform.position, transform.rotation);
+
     }
 }

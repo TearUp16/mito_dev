@@ -6,12 +6,22 @@ public class Bullet : MonoBehaviour
 {
     public float moveSpeed;
 
+    public float destroyDelay = 5f; // Time delay before destroying the bullet
+
+    public int damage = 10;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        // Invoke the DestroyBullet function after a delay
+        Invoke("DestroyBullet", destroyDelay);
     }
 
+    void DestroyBullet()
+    {
+        // Destroy the bullet GameObject
+        Destroy(gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -20,10 +30,18 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
         {
-            Destroy(collision.gameObject);
+            enemyHealth.TakeDamage(damage);
             Destroy(gameObject);
         }
+
+
+        //if (collision.gameObject.tag == "Enemy")
+        //{
+            //Destroy(collision.gameObject);
+            //Destroy(gameObject);
+        //}
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2196828274559460405}
   - component: {fileID: 3154174736443281987}
   - component: {fileID: 412371956203236575}
+  - component: {fileID: 3643762571431251522}
   m_Layer: 0
   m_Name: BlackDuwende
   m_TagString: Enemy
@@ -184,3 +185,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &3643762571431251522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025362937207674945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3668b9dcdb8684e8b70636ddb8a068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
