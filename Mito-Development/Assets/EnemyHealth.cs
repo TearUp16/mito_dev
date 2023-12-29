@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
     
 
-    void Start()
+    public void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         //need ayusin
-        //animator.SetTrigger("die");
+        animator.SetTrigger("die");
 
         // Perform any death animations or effects
 
