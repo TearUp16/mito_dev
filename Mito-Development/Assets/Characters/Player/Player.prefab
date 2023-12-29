@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8746225888231984907}
   - component: {fileID: 8904118156983954367}
   - component: {fileID: 5430002950154482095}
+  - component: {fileID: 9222461278762345992}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -254,3 +255,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 4389230023371754991, guid: d0e9fe2a0b5d4ce41ac5126a45b75637, type: 3}
+--- !u!114 &9222461278762345992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683297766601211037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36ada97de4a7084e9c718dea63b6d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100

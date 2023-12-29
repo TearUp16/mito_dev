@@ -2,45 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
     private Animator animator;
-    float waitTime = 4f;
-
-    
-
+    // Start is called before the first frame update
     public void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
-        //animator.SetBool("isAlive", isAlive);
     }
-
-
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
 
         animator.SetTrigger("hit");
 
-
-        // Check if the enemy is dead
-        if (currentHealth <= 0) 
+        // Check if the player is dead
+        if (currentHealth <= 0)
         {
             Die();
-
         }
     }
 
     void Die()
     {
-        //need ayusin
+        // Perform any player death-related actions
         animator.SetTrigger("die");
-
-        // Perform any death animations or effects
-
-        Destroy(gameObject, 0.5f); // Destroy the enemy GameObject
+        Destroy(gameObject, 0.5f);
+        Debug.Log("Player has died");
+        // You might want to add more actions like game over screen, restart, etc.
     }
 }

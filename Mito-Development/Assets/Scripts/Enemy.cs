@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -10,7 +8,7 @@ public class Enemy : MonoBehaviour
 
     Rigidbody2D rb;
 
-    Animator animator;
+    private Animator animator;
 
     void Start()
     {
@@ -26,11 +24,9 @@ public class Enemy : MonoBehaviour
         direction.Normalize();
         GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
 
-        if (movement != Vector2.zero)
+
+        if (direction != Vector2.zero)
         {
             // Player is moving
             animator.SetBool("isMoving", true);
@@ -40,11 +36,11 @@ public class Enemy : MonoBehaviour
             // Player is idle
             animator.SetBool("isMoving", false);
         }
-        if (movement.x < 0)
+        if (direction.x < 0)
         {
             spriteRenderer.flipX = true;
         }
-        else if (movement.x > 0)
+        else if (direction.x > 0)
         {
             spriteRenderer.flipX = false;
         }
