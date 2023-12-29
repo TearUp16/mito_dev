@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     public float destroyDelay = 5f; // Time delay before destroying the bullet
 
-    public int damage = 10;
+    public int damage = 40;
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +36,6 @@ public class Bullet : MonoBehaviour
             enemyHealth.TakeDamage(damage);
             Destroy(gameObject);
         }
-
-
         //if (collision.gameObject.tag == "Enemy")
         //{
             //Destroy(collision.gameObject);

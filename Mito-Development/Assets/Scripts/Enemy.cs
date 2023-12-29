@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
 
     Rigidbody2D rb;
 
-    private Animator animator;
+    Animator animator;
 
     void Start()
     {
