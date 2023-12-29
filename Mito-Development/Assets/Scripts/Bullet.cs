@@ -10,11 +10,16 @@ public class Bullet : MonoBehaviour
 
     public int damage = 40;
 
+    private PointManager pointManager;
+
     // Start is called before the first frame update
     void Start()
     {
         // Invoke the DestroyBullet function after a delay
         Invoke("DestroyBullet", destroyDelay);
+
+        //Scoring
+        pointManager = GameObject.Find("PointManager").GetComponent<PointManager>();
     }
 
     void DestroyBullet()
@@ -34,7 +39,10 @@ public class Bullet : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(damage);
-            Destroy(gameObject);
+
+            pointManager.UpdateScore(5);
+            
+            Destroy(gameObject); //Destroy Enemy
         }
         //if (collision.gameObject.tag == "Enemy")
         //{

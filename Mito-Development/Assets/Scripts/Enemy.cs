@@ -24,8 +24,6 @@ public class Enemy : MonoBehaviour
         direction.Normalize();
         GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-
-
         if (direction != Vector2.zero)
         {
             // Player is moving

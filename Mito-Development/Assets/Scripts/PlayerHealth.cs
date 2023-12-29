@@ -31,7 +31,6 @@ public class PlayerHealth : MonoBehaviour
         // Perform any player death-related actions
         animator.SetTrigger("die");
         Destroy(gameObject, 0.5f);
-        Debug.Log("Player has died");
         // You might want to add more actions like game over screen, restart, etc.
     }
 }
