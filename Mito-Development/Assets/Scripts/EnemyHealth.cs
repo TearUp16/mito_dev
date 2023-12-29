@@ -39,7 +39,7 @@ public class EnemyHealth : MonoBehaviour
 
         // Perform any death animations or effects
 
-        Destroy(gameObject, 0.5f); // Destroy the enemy GameObject
+        Destroy(gameObject, 0.4f); // Destroy the enemy GameObject
     }
 
     void OnCollisionEnter2D(Collision2D collision)
