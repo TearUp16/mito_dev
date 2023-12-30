@@ -43,6 +43,8 @@ public class Bullet : MonoBehaviour
             pointManager.UpdateScore(5);
             
             Destroy(gameObject); //Destroy Enemy
+
+
         }
         //if (collision.gameObject.tag == "Enemy")
         //{
