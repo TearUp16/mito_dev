@@ -35,5 +35,10 @@ public class NavigationMain : MonoBehaviour
     public void OnHelpClick(){
         SceneManager.LoadScene("Help Scene");
     }
+    public void OnPlayButton()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
     
 }

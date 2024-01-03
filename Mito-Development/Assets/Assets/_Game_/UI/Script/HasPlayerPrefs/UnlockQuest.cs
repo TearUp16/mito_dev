@@ -10,7 +10,7 @@ public class UnlockQuest : MonoBehaviour
 
     void Awake()
     {
-        questUnlock = 0;//PlayerPrefs.GetInt("QuestUnlock");
+        questUnlock = 4;//PlayerPrefs.GetInt("QuestUnlock");
         PlayerPrefs.SetInt("QuestUnlock", questUnlock);
         unlockNewQuest();
     }

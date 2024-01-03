@@ -8,6 +8,126 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Splash Screen Main.unity
+    guid: 0cb4d7562cc5bf04fa79aa730c9d6784
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Title Screen Main.unity
+    guid: f3ace5663f39b4a4882e804a73b6b924
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Main Menu/Help Scene.unity
+    guid: 8c026655c53ac1949bbabf9eb5f2cee5
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Main Menu/Heroes Scene.unity
+    guid: 7e9a3907d825b6a4fa3e38e45b072c3d
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Main Menu/Leaderboards Scene.unity
+    guid: 2728de5e02334b545a2ad147d640af70
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Main Menu/Play Scene.unity
+    guid: f3a0e0205eb792248a55027b42fc1c4e
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Main Menu/Story Scene.unity
+    guid: 4100e8700ad66be479a5e846e255c482
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page1.unity
+    guid: 7c67c076eb5a38f4dab42cbdc8745588
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page2.unity
+    guid: 609fff48718ee4d44ae61125a392ac3a
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page3.unity
+    guid: e633f3ef2c974154aa125ebce82f37a3
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page4.unity
+    guid: 2f98bcc8359f6b24ca52fa2c8d8b176a
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page5.unity
+    guid: 363101ea96c0a8346852084e80785917
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page6.unity
+    guid: 91d855c3f058a0041b7b684c4b1e8334
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page7.unity
+    guid: dd043a15e3e41a146b00f0cf0e850c77
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page8.unity
+    guid: 8cc9de9d8e6efcc4694f72b08d549b37
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 1/Ch1_Page9.unity
+    guid: 868fbf32518cd9846970d67e3edd6733
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page1.unity
+    guid: 91059d7f7fc2c604380d39ad4b557c98
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page2.unity
+    guid: 577e6acc4151c774c80e8d3a3b5ff35b
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page3.unity
+    guid: d42d999b5a574144c81adad3bad483f8
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page4.unity
+    guid: 284ea6f571553ec46b04126499aedc42
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page5.unity
+    guid: 1ba1ce974a781264f9418c5acd9656b6
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page6.unity
+    guid: c1b815f54a676f843bc10ce211ae033d
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 2/Ch2_Page7.unity
+    guid: cb1640752dc0d4e4a8d701bafeada10c
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page1.unity
+    guid: 134afc4695e85ae4ab5471bba883e039
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page2.unity
+    guid: 42676826e8a4ac746b72f801187e37b1
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page3.unity
+    guid: 913c79da57df0474f874fc21c9d003b6
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page4.unity
+    guid: 528029e01a3d53f4ca41edc65a6002ca
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page5.unity
+    guid: 8f71e585dd6014a4c88055217342fe25
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page6.unity
+    guid: 99f557ee129ff3041a15fa6ac00500a5
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page7.unity
+    guid: 91c82b455c15601458cebd239480713d
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 3/Ch3_Page8.unity
+    guid: 9d9f861632ba36646993eabd97926ada
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page1.unity
+    guid: 536b784b4f7d5704aa58c573934edc27
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page2.unity
+    guid: fecd24ac48d999c4c9160a33aea88465
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page3.unity
+    guid: b0e261d1ec8ed5040b5391446f146466
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page4.unity
+    guid: 6c1668a4190d1d443b13938982b0c7bf
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page5.unity
+    guid: fae363bac0410204d80d90f2cd98fe9e
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page6.unity
+    guid: 07b513dc3d825144a9da85a3cae77a49
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page7.unity
+    guid: 175c1a37e456575438708639e4ab6582
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page8.unity
+    guid: a2671942f697ca04abf8c7929a2036a0
+  - enabled: 1
+    path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page9.unity
+    guid: 9604bd581d91abf43a15543a73fcd256
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ffa78dbe21575f34f9b43c78aba59414, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7f3aa4c611fd6b649a502f1297808dd3, type: 2}

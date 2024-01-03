@@ -11,7 +11,7 @@ public class PlayButtonScript : MonoBehaviour
 
         if (hasplayed == "true"){
            GoToCharacterSelection();
-           PlayerPrefs.SetString("PlayerHasPlayed", "false"); //temporary
+           //PlayerPrefs.SetString("PlayerHasPlayed", "false"); //temporary
         }else{
             PlayerPrefs.SetString("PlayerHasPlayed", "true");
             PlayerPrefs.SetString("IntroHasPlayed", "false");
