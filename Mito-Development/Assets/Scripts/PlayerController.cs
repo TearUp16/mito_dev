@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
 
     public ContactFilter2D movementFilter;
-    
+
     Animator animator;
 
     Vector2 movementInput;
@@ -33,28 +33,30 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(movementInput != Vector2.zero)
+        if (movementInput != Vector2.zero)
         {
             bool success = TryMove(movementInput);
 
             if (!success)
             {
-                success = TryMove(new Vector2 (movementInput.x, 0));
+                success = TryMove(new Vector2(movementInput.x, 0));
 
-                if(success)
+                if (success)
                 {
                     success = TryMove(new Vector2(0, movementInput.y));
                 }
             }
             animator.SetBool("isMoving", success);
-        }else
+        }
+        else
         {
             animator.SetBool("isMoving", false);
         }
-        if(movementInput.x < 0)
+        if (movementInput.x < 0)
         {
             spriteRenderer.flipX = true;
-        } else if (movementInput.x > 0)
+        }
+        else if (movementInput.x > 0)
         {
             spriteRenderer.flipX = false;
         }
@@ -83,4 +85,58 @@ public class PlayerController : MonoBehaviour
     {
         movementInput = movementValue.Get<Vector2>();
     }
+
+    /*    [SerializeField]
+        private float _speed;
+
+        [SerializeField]
+        private float _rotationSpeed;
+
+        private Rigidbody2D _rigidbody2D;
+        private Vector2 _movementInput;
+        private Vector2 _smoothedMovementInput;
+        private Vector2 _movementInputSmoothVelocity;
+
+        private void Awake()
+        {
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+        }*/
+
+    //any changes to the rigidbody is recommended to be made inside this 
+    /*    private void FixedUpdate()
+        {
+            SetPlayerVelocity();
+            RotateInDirectionOfInput();
+        }
+
+        private void SetPlayerVelocity()
+        {
+            _smoothedMovementInput = Vector2.SmoothDamp(
+                        _smoothedMovementInput,
+                        _movementInput,
+                        ref _movementInputSmoothVelocity,
+                        0.1f);
+
+            _rigidbody2D.velocity = _smoothedMovementInput * _speed;
+        }
+
+        private void RotateInDirectionOfInput()
+        {
+            if (_movementInput != Vector2.zero)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(
+                    transform.forward, _smoothedMovementInput);
+
+                Quaternion rotation = Quaternion.RotateTowards(
+                    transform.rotation, targetRotation,
+                    _rotationSpeed * Time.deltaTime);
+
+                _rigidbody2D.MoveRotation(rotation);
+            }
+        }
+
+        private void OnMove(InputValue inputValue)
+        {
+            _movementInput = inputValue.Get<Vector2>();
+        }*/
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -8,11 +9,18 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private GameObject[] enemyPrefabs;
 
-    [SerializeField] private bool canSpawn = true;
+    [SerializeField] public bool canSpawn = true;
+    [SerializeField] private int numberOfEnemiesToSpawn;
+
+    int enemyCount = 0;
+    //public TMP_Text numberOfEnemies;
+    PlayerHealth playerHealth;
+    bool status;
 
     // Start is called before the first frame update
     private void Start()
     {
+        playerHealth = new PlayerHealth();
         StartCoroutine(Spawner());
     }
 
@@ -20,14 +28,24 @@ public class EnemySpawner : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
-        while (canSpawn)
+        while (canSpawn && enemyCount < numberOfEnemiesToSpawn)
         {
+            status = playerHealth.isAlive;
+            Debug.Log(status);
             yield return wait;
-            int rand = Random.Range(0, enemyPrefabs.Length); 
+            int rand = Random.Range(0, enemyPrefabs.Length);
             GameObject enemyToSpawn = enemyPrefabs[rand];
 
             Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+            enemyCount++;
+            //UpdateEnemyCount(enemyCount);
+
         }
     }    
+
+    /*public void UpdateEnemyCount(int enemies)
+    {
+        numberOfEnemies.text = "Enemy Count : " + enemies;
+    }*/
 }
 
