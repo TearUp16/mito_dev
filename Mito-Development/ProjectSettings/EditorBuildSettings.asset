@@ -129,5 +129,7 @@ EditorBuildSettings:
     path: Assets/Assets/_Game_/UI/Scenes/Story/Chapter 4/Ch4_Page9.unity
     guid: 9604bd581d91abf43a15543a73fcd256
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: fc8782dd54775824f9f301801e91c58d, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ffa78dbe21575f34f9b43c78aba59414, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e688a188c86327b4c9a938beeba905cf, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7f3aa4c611fd6b649a502f1297808dd3, type: 2}
