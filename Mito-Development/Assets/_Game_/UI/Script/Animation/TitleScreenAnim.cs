@@ -9,6 +9,10 @@ public class TitleScreenAnim : MonoBehaviour
     [SerializeField] GameObject[] highscoreItem;
     [SerializeField] LeanTweenType tweenType;
     [SerializeField] float tweenTime;
+    AudioManager audioManager;
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
+    }
     
     private void Start() {
         LeanTween.moveLocal(buttonset1[0], new Vector3(-93.4f,14.7f,1), 0.5f).setEase(LeanTweenType.easeOutCirc);
@@ -66,6 +70,7 @@ public class TitleScreenAnim : MonoBehaviour
 
     //leaderboards animation
     public void LeaderboardPanelSlideIn(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         LeanTween.moveLocal(leaderboardsPanel, new Vector3(0f, 0f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         openPanel();
         Invoke("top1Scale", 0.5f);

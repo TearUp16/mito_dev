@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayButtonScript : MonoBehaviour
 {
-    string hasplayed;   
+    AudioManager audioManager;
+    string hasplayed;
+
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
+    }
     public void PlayButtonClickEvent(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         hasplayed = PlayerPrefs.GetString("PlayerHasPlayed");
 
         if (hasplayed == "true"){

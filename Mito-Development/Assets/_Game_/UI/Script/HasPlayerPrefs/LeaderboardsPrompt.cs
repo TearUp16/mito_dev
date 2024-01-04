@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class LeaderboardsPrompt : MonoBehaviour
 {
+    AudioManager audioManager;
     string p1,p2,p3;
     int s1,s2,s3;
     [SerializeField] TMP_Text tp1,tp2,tp3,ts1,ts2,ts3;
     [SerializeField] GameObject leaderboardsPrompt;
 
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[1].GetComponent<AudioManager>();
+    }
     void Start()
     {
         p1 = PlayerPrefs.GetString("Top1Player");
@@ -28,6 +33,7 @@ public class LeaderboardsPrompt : MonoBehaviour
     }
     
     public void openLeaderBoards(){
+        //audioManager.PlaySFX(audioManager.buttonClick);
         leaderboardsPrompt.SetActive(true);
     }
     public void Close(){
