@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Audio
+  - Dropdown
   layers:
   - Default
   - TransparentFX
