@@ -23,8 +23,10 @@ public class CharacterSwipeController : MonoBehaviour, IEndDragHandler
     [SerializeField] Button previousBtn, nextBtn;
     [SerializeField] Button[] selectBtn;
     [SerializeField] GameObject[] charselect;
+    AudioManager audioManager;
 
     void Awake(){
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
         questUnlock = PlayerPrefs.GetInt("QuestUnlock");
         currentPage = 1;
         targetPos = levelPagesRect.localPosition;
@@ -43,6 +45,7 @@ public class CharacterSwipeController : MonoBehaviour, IEndDragHandler
     }
 
     public void Next(){
+        audioManager.PlaySFX(audioManager.nextClick);
         if(currentPage < maxPage){
             currentPage++;
             targetPos += pageStep;
@@ -53,6 +56,7 @@ public class CharacterSwipeController : MonoBehaviour, IEndDragHandler
     }
 
     public void Previous(){
+        audioManager.PlaySFX(audioManager.prevClick);
         if(currentPage > 1 ){
             currentPage--;
             targetPos -= pageStep;

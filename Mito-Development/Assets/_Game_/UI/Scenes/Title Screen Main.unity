@@ -900,7 +900,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.074
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3095,6 +3095,12 @@ MonoBehaviour:
   buttonClick: {fileID: 8300000, guid: e49810a973244c241948958863228931, type: 3}
   quitButtonClick: {fileID: 8300000, guid: b5d2ffc234a9ef14aac51017ef708b22, type: 3}
   playButtonClick: {fileID: 8300000, guid: 9b5ca5d9b175ad040acdb6e580d32ccd, type: 3}
+  gameStart: {fileID: 8300000, guid: 9b5ca5d9b175ad040acdb6e580d32ccd, type: 3}
+  selectClick: {fileID: 8300000, guid: f0ee7c8ec6775e74ebf29e87e7207a5f, type: 3}
+  closeClick: {fileID: 8300000, guid: fca9a04962a74f442a87fc7360c5b0a5, type: 3}
+  infoClick: {fileID: 8300000, guid: b1ed85ca32f895f4ba3d84bc5b0447f1, type: 3}
+  nextClick: {fileID: 8300000, guid: d19102226a2235c48bd966931fbd40fa, type: 3}
+  prevClick: {fileID: 8300000, guid: a42752b8ce9d33d4786600be58905583, type: 3}
 --- !u!4 &445223526
 Transform:
   m_ObjectHideFlags: 0
@@ -5599,15 +5605,15 @@ MonoBehaviour:
   - {fileID: 1569359755}
   - {fileID: 1287225286}
   - {fileID: 85355616}
-  - {fileID: 349299011}
   questItemDone:
   - {fileID: 2100149543}
   - {fileID: 664454357}
   - {fileID: 728596068}
   - {fileID: 648799428}
-  - {fileID: 1053428460}
   questRewardChar: []
   questRewardStory: []
+  noQuestDone: {fileID: 1053428460}
+  noQuestItem: {fileID: 349299011}
 --- !u!1 &743529258
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,18 +11,24 @@ public class CharacterSelect : MonoBehaviour
     [SerializeField] TMP_Text[] label;
     string selectedChar; 
     string apolaki, amanikable, anituntabu, mayari;
+    AudioManager audioManager;
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
+    }
     void Start(){
         RetrieveSelected();
         
     }
 
     public void selectApolaki(){
+        audioManager.PlaySFX(audioManager.selectClick);
         Deselect();
         apolaki = "Apolaki";
         label[0].SetText("selected");
         SetCharacter(apolaki);
     }
     public void selectAmanikable(){
+        audioManager.PlaySFX(audioManager.selectClick);
         Deselect();
         amanikable = "Amanikable";
         label[1].SetText("selected");
@@ -30,12 +36,14 @@ public class CharacterSelect : MonoBehaviour
         
     }
     public void selectAnitunTabu(){
+        audioManager.PlaySFX(audioManager.selectClick);
         Deselect();
         anituntabu = "Anituntabu";
         label[2].SetText("selected");
         SetCharacter(anituntabu);
     }
     public void selectMayari(){
+        audioManager.PlaySFX(audioManager.selectClick);
         Deselect();
         mayari = "Mayari";
         label[3].SetText("selected");

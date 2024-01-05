@@ -28,10 +28,12 @@ public class TitleScreenAnim : MonoBehaviour
 
     //quest animation
     public void QuestSlideIn(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         LeanTween.moveLocal(questPanel, new Vector3(0f, 0f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         openPanel();
     }
     public void QuestSlideOut(){
+        audioManager.PlaySFX(audioManager.closeClick);
         LeanTween.moveLocal(questPanel, new Vector3(0f, -180f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         Invoke("closeQuestPanel", 0.5f);
         closePanel();
@@ -42,10 +44,12 @@ public class TitleScreenAnim : MonoBehaviour
 
     //settings animation
     public void SettingsSlideIn(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         LeanTween.moveLocal(settingsPanel, new Vector3(0f, 0f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         openPanel();
     }
     public void SettingsSlideOut(){
+        audioManager.PlaySFX(audioManager.closeClick);
         LeanTween.moveLocal(settingsPanel, new Vector3(0f, -180f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         Invoke("closeSettingsPanel", 0.5f);
         closePanel();
@@ -56,10 +60,12 @@ public class TitleScreenAnim : MonoBehaviour
 
     //quit animation
     public void QuitPanelScaleUp(){
+        audioManager.PlaySFX(audioManager.quitButtonClick);
         LeanTween.scale(quitPanel, new Vector3(1f,1f,1f),0.5f).setEase(LeanTweenType.easeInOutElastic);
         openPanel();
     }
     public void QuitPanelScaleDown(){
+        audioManager.PlaySFX(audioManager.closeClick);
         LeanTween.scale(quitPanel, new Vector3(0f,0f,0f),0.5f).setEase(LeanTweenType.easeInOutElastic);
         Invoke("closeQuitPanel", 0.5f);
         closePanel();
@@ -78,6 +84,7 @@ public class TitleScreenAnim : MonoBehaviour
         Invoke("top3Scale", 1.3f);
     }
     public void LeaderboardPanelSlideOut(){
+        audioManager.PlaySFX(audioManager.closeClick);
         LeanTween.moveLocal(leaderboardsPanel, new Vector3(0f, -180f, 0f), 0.5f).setEase(LeanTweenType.easeInOutCubic);
         Invoke("closeLeaderBoardPanel", 0.5f);
         closePanel();

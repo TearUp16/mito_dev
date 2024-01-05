@@ -9,10 +9,14 @@ public class VolumeButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     [SerializeField] private Image _img;
     [SerializeField] private Sprite _default, _pressed, _muted, _mutedpressed;
     bool isMuted = false;
+    AudioManager audioManager;
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        
+        audioManager.PlaySFX(audioManager.buttonClick);
         if(isMuted){
             _img.sprite = _mutedpressed;
         }else{

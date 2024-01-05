@@ -7,7 +7,12 @@ using UnityEngine.UI;
 
 public class NavigationMain : MonoBehaviour
 {
+    AudioManager audioManager;
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
+    }
     public void OnHomeClick(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         SceneManager.LoadScene("Title Screen Main");
     }
 
@@ -23,13 +28,12 @@ public class NavigationMain : MonoBehaviour
     }
 
     public void OnHeroesClick(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         SceneManager.LoadScene("Heroes Scene");
     }
     public void OnStoryClick(){
+        audioManager.PlaySFX(audioManager.buttonClick);
         SceneManager.LoadScene("Story Scene");
-    }
-    public void OnLeaderBoardsClick(){
-        SceneManager.LoadScene("Leaderboard");
     }
     
     public void OnHelpClick(){
@@ -37,6 +41,7 @@ public class NavigationMain : MonoBehaviour
     }
     public void OnPlayButton()
     {
+        audioManager.PlaySFX(audioManager.gameStart);
         SceneManager.LoadScene("SampleScene");
     }
 

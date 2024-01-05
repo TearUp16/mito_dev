@@ -12,9 +12,23 @@ public class AudioManager : MonoBehaviour
     public AudioClip buttonClick;
     public AudioClip quitButtonClick;
     public AudioClip playButtonClick;
+    public AudioClip gameStart;
+    public AudioClip selectClick;
+    public AudioClip closeClick;
+    public AudioClip infoClick;
+    public AudioClip nextClick;
+    public AudioClip prevClick;
+
+
+    public static AudioManager instance;
 
     private void Awake() {
-        DontDestroyOnLoad(gameObject);
+        if(instance == null){
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }else{
+            Destroy(gameObject);
+        }
     }
     private void Start() {
         musicSource.clip = background;

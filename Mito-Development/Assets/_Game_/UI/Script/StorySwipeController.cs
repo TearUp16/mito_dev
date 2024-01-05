@@ -18,8 +18,10 @@ public class StorySwipeController : MonoBehaviour, IEndDragHandler
     [SerializeField] Image[] barImage;
     [SerializeField] Sprite active, notActive;
     [SerializeField] Button previousBtn, nextBtn;
+    AudioManager audioManager;
 
     public void Awake(){
+        audioManager = GameObject.FindGameObjectsWithTag("Audio")[0].GetComponent<AudioManager>();
         currentPage = 1;
         targetPos = levelPagesRect.localPosition;
         dragThreshold = Screen.width / 15;
@@ -29,6 +31,7 @@ public class StorySwipeController : MonoBehaviour, IEndDragHandler
     }
 
     public void Next(){
+        audioManager.PlaySFX(audioManager.nextClick);
         if(currentPage < maxPage){
             currentPage++;
             targetPos += pageStep;
@@ -39,6 +42,7 @@ public class StorySwipeController : MonoBehaviour, IEndDragHandler
     }
 
     public void Previous(){
+        audioManager.PlaySFX(audioManager.prevClick);
         if(currentPage > 1 ){
             currentPage--;
             targetPos -= pageStep;

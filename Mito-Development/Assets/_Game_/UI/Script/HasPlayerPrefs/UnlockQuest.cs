@@ -6,11 +6,12 @@ public class UnlockQuest : MonoBehaviour
 {
     int questUnlock, questProgress1, questProgress2, questProgress3, questProgress4;
     [SerializeField] GameObject[] questItem, questItemDone, questRewardChar, questRewardStory;
+    [SerializeField] GameObject noQuestDone, noQuestItem;
 
 
     void Awake()
     {
-        questUnlock = 4;//PlayerPrefs.GetInt("QuestUnlock");
+        questUnlock = 0;//PlayerPrefs.GetInt("QuestUnlock");
         PlayerPrefs.SetInt("QuestUnlock", questUnlock);
         unlockNewQuest();
     }
@@ -18,7 +19,7 @@ public class UnlockQuest : MonoBehaviour
         if(questUnlock == 0){
             questItem[0].SetActive(true);
 
-            questItemDone[4].SetActive(true);
+            noQuestDone.SetActive(true);
         }
         else if(questUnlock == 1){
             questItem[1].SetActive(true);
@@ -46,7 +47,7 @@ public class UnlockQuest : MonoBehaviour
             questItemDone[2].SetActive(true);
         }
         else if(questUnlock > 4){
-            questItem[4].SetActive(true);
+            noQuestItem.SetActive(true);
             Destroy(questItem[0]);
             Destroy(questItem[1]);
             Destroy(questItem[2]);
