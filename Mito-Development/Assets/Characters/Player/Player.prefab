@@ -149,6 +149,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  movementInput: {x: 0, y: 0}
 --- !u!50 &4333881913106229458
 Rigidbody2D:
   serializedVersion: 4
@@ -255,6 +256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 4389230023371754991, guid: d0e9fe2a0b5d4ce41ac5126a45b75637, type: 3}
+  shootingPoint: {fileID: 0}
+  _specialBulletPrefab: {fileID: 0}
 --- !u!114 &9222461278762345992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,3 +271,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
+  isAlive: 1

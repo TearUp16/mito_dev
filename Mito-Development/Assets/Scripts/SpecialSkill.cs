@@ -13,4 +13,7 @@ public class SpecialSkill : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
+    //for the special skill, we'll need the gameobject of the player, and the animation that happens when
+    // the player uses its special skill. after that, it will be triggered at button press and the animation will play.
+
 }

@@ -10,6 +10,9 @@ public class PlayerShoot : MonoBehaviour
     private GameObject _bulletPrefab;
 
     [SerializeField]
+    private Transform shootingPoint;
+
+    [SerializeField]
     private GameObject _specialBulletPrefab;
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class PlayerShoot : MonoBehaviour
     public void FireBullets()
     {
         Instantiate(_bulletPrefab,
-                transform.position, transform.rotation);
+                shootingPoint.position, transform.rotation);
 
         /*Debug.Log("Normal attack coming!");*/
     }

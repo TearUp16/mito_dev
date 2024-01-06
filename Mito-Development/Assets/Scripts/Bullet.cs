@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public int damage = 40;
 
     private PointManager pointManager;
+    PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class Bullet : MonoBehaviour
 
         //Scoring
         pointManager = GameObject.Find("PointManager").GetComponent<PointManager>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     void DestroyBullet()
@@ -30,7 +32,14 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+        //Debug.Log(playerController.movementInput.x);
+        //transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        
+    }
+
+    private void FixedUpdate()
+    {
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
