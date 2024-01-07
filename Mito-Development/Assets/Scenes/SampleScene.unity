@@ -4891,6 +4891,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   canSpawn: 1
   numberOfEnemiesToSpawn: 0
+  enemiesKilled: 0
 --- !u!4 &1161394321
 Transform:
   m_ObjectHideFlags: 0
@@ -5419,7 +5420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063378d5bee290e47a35e2f281ca283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyAwarenessDistance: 10
+  enemyAwarenessDistance: 3
 --- !u!212 &1677200872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5460,7 +5461,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b69cdb8c73cb29d41a60203ccce7837b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5658,6 +5659,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   canSpawn: 1
   numberOfEnemiesToSpawn: 5
+  enemiesKilled: 0
 --- !u!4 &1960568336
 Transform:
   m_ObjectHideFlags: 0
@@ -5707,6 +5709,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   canSpawn: 1
   numberOfEnemiesToSpawn: 0
+  enemiesKilled: 0
 --- !u!4 &2008505545
 Transform:
   m_ObjectHideFlags: 0

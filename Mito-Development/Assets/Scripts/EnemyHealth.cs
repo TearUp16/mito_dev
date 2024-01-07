@@ -35,5 +35,6 @@ public class EnemyHealth : MonoBehaviour
         animator.SetTrigger("die");
         // Perform any death animations or effects
         Destroy(gameObject, 0.3f); // Destroy the enemy GameObject
+
     }
 }

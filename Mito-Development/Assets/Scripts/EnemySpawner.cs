@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     //public TMP_Text numberOfEnemies;
     PlayerHealth playerHealth;
     bool status;
+    public int enemiesKilled = 0;
 
     // Start is called before the first frame update
     private void Start()

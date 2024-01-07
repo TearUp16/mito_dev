@@ -50,15 +50,12 @@ public class Bullet : MonoBehaviour
             enemyHealth.TakeDamage(damage);
 
             pointManager.UpdateScore(5);
-            
-            Destroy(gameObject); //Destroy Enemy
-
-
+            Destroy(gameObject);
         }
         //if (collision.gameObject.tag == "Enemy")
         //{
-            //Destroy(collision.gameObject);
-            //Destroy(gameObject);
+        //Destroy(collision.gameObject);
+        //Destroy(gameObject);
         //}
     }
 }
