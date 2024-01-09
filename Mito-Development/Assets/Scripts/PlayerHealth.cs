@@ -34,8 +34,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         // Perform any player death-related actions
-        enemySpawner.canSpawn = false;
-        //isAlive = false;
         animator.SetTrigger("die");
         Destroy(gameObject, 0.5f);
         

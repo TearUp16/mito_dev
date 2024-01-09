@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3643762571431251522}
   - component: {fileID: 6913067746846966104}
   m_Layer: 0
-  m_Name: BlackDuwende
+  m_Name: MiniBossBlackDuwende
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.945, y: 0.123, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2730ffc7aa6cc5478d3cab98d7737b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 2
 --- !u!114 &3643762571431251522
 MonoBehaviour:
   m_ObjectHideFlags: 0

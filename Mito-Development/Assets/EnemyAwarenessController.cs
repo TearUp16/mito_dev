@@ -16,7 +16,7 @@ public class EnemyAwarenessController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _enemy = FindObjectOfType<Enemy>().transform;
+        _enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
 
         Vector2 enemyToPlayerVector = _enemy.position - transform.position;
         DirectionToEnemy = enemyToPlayerVector.normalized;

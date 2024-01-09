@@ -8,20 +8,17 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float spawnRate = 1f;
 
     [SerializeField] private GameObject[] enemyPrefabs;
-
-    [SerializeField] public bool canSpawn = true;
     [SerializeField] private int numberOfEnemiesToSpawn;
 
+    [SerializeField] private GameObject miniBossSpawnPoint;
+
     int enemyCount = 0;
+    MiniBossSpawner miniboss;
     //public TMP_Text numberOfEnemies;
-    PlayerHealth playerHealth;
-    bool status;
-    public int enemiesKilled = 0;
 
     // Start is called before the first frame update
     private void Start()
     {
-        playerHealth = new PlayerHealth();
         StartCoroutine(Spawner());
     }
 
@@ -29,10 +26,8 @@ public class EnemySpawner : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
-        while (canSpawn && enemyCount < numberOfEnemiesToSpawn)
+        while (enemyCount < numberOfEnemiesToSpawn)
         {
-            status = playerHealth.isAlive;
-            Debug.Log(status);
             yield return wait;
             int rand = Random.Range(0, enemyPrefabs.Length);
             GameObject enemyToSpawn = enemyPrefabs[rand];
@@ -41,6 +36,11 @@ public class EnemySpawner : MonoBehaviour
             enemyCount++;
             //UpdateEnemyCount(enemyCount);
 
+        }
+
+        if (enemyCount == numberOfEnemiesToSpawn)
+        {
+            miniBossSpawnPoint.SetActive(true);
         }
     }    
 
