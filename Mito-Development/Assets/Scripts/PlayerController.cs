@@ -39,14 +39,14 @@ public class PlayerController : MonoBehaviour
         //_enemyAwarenessController = GetComponent<EnemyAwarenessController>();
     }
 
-    public void Update()
+/*    public void Update()
     {
         rb.velocity = new Vector2(movementInput.x * moveSpeed, 0);
         rb.velocity = new Vector2(0, movementInput.y * moveSpeed);
 
         movementVariable.x = movementInput.x;
         movementVariable.y = movementInput.y;
-    }
+    }*/
 
     public void OnMove(InputValue inputValue)
     {
@@ -59,17 +59,67 @@ public class PlayerController : MonoBehaviour
         /*UpdateEnemyDirection();
         RotateTowardsTarget();*/
 
-        rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+        /* rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
 
-        if (movementInput.x > 0.01f)
+         if (movementInput.x > 0.01f)
+         {
+             transform.localScale = new Vector3(0.8f, 0.8f, 1);
+         } else if (movementInput.x < -0.01f)
+         {
+             transform.localScale = new Vector3(-0.8f, 0.8f, 1);
+
+         }*/
+
+        if (movementInput != Vector2.zero)
         {
-            transform.localScale = new Vector3(0.8f, 0.8f, 1);
-        } else if (movementInput.x < -0.01f)
+            bool success = TryMove(movementInput);
+
+            if (!success)
+            {
+                success = TryMove(new Vector2(movementInput.x, 0));
+
+                if (success)
+                {
+                    success = TryMove(new Vector2(0, movementInput.y));
+                }
+            }
+            animator.SetBool("isMoving", success);
+        }
+        else
         {
-            transform.localScale = new Vector3(-0.8f, 0.8f, 1);
-            
+            animator.SetBool("isMoving", false);
+        }
+        if (movementInput.x < 0)
+        {
+            spriteRenderer.flipX = true;
+            //transform.Rotate(0, 180, 0);
+        }
+        else if (movementInput.x > 0)
+        {
+            spriteRenderer.flipX = false;
+            //transform.Rotate(0, 0, 0);
         }
     }
+
+    private bool TryMove(Vector2 direction)
+    {
+        int count = rb.Cast(
+                direction,
+                movementFilter,
+                castCollisions,
+                moveSpeed * Time.fixedDeltaTime + collisionOffset);
+
+        if (count == 0)
+        {
+            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
 
     /*private void UpdateEnemyDirection()
     {
@@ -97,8 +147,7 @@ public class PlayerController : MonoBehaviour
             (transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
             rb.SetRotation(rotation);
     }*/
-    /* --------
-     * if (movementInput != Vector2.zero)
+    /* if (movementInput != Vector2.zero)
     {
         bool success = TryMove(movementInput);
 
@@ -207,4 +256,3 @@ void OnMove(InputValue movementValue)
         }
 
         */
-}
