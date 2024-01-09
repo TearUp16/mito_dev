@@ -2084,16 +2084,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -3516,7 +3506,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 103
+  - m_RefCount: 102
     m_Data: {fileID: 11400000, guid: 3a5970f50fb09af4c97221ec19664afb, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 8475ef435a69ddc4db7ee9594d4ce5dd, type: 2}
@@ -3597,7 +3587,7 @@ Tilemap:
   - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: c4e167c37ec60724ca30d28c08efacb8, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 103
+  - m_RefCount: 102
     m_Data: {fileID: 909004722, guid: 20304e4f266bf3f4d97216fc696b64da, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 811673313, guid: 20304e4f266bf3f4d97216fc696b64da, type: 3}
@@ -3678,7 +3668,7 @@ Tilemap:
   - m_RefCount: 17
     m_Data: {fileID: 2035015791, guid: 20304e4f266bf3f4d97216fc696b64da, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 290
+  - m_RefCount: 289
     m_Data:
       e00: 1
       e01: 0
@@ -3751,7 +3741,7 @@ Tilemap:
       e32: 1.32e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 330
+  - m_RefCount: 329
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -4599,8 +4589,8 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.17666431, g: 0.20033823, b: 0.23584908, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4668,7 +4658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 100
+  m_AssetsPPU: 16
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_UpscaleRT: 1
@@ -5406,7 +5396,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 519420031}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -6053,7 +6043,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 519420031}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -6897,7 +6887,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 519420031}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
