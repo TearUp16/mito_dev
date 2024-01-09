@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
     }
     private void Start() {
         int track = PlayerPrefs.GetInt("Track");
-            OnValueChanged(0);
+            OnValueChanged(track);
     }
 
     public void OnValueChanged(int val)
@@ -66,9 +66,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip){
         SFXSource.PlayOneShot(clip);
     }
-    void PlayMusic(){
-
-    }
+    
     
 
 }
