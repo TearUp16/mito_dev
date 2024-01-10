@@ -18,6 +18,8 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private GameObject _specialBulletPrefab;
 
+    Animator animator;
+
     // Update is called once per frame
     /*    void Update()
         {
@@ -47,7 +49,6 @@ public class PlayerShoot : MonoBehaviour
     {
         Instantiate(_specialBulletPrefab,
                 specialShootingPoint.position, transform.rotation);
-
         /*Debug.Log("Special attack coming!");*/
     }
 }

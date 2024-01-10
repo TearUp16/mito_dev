@@ -8,6 +8,7 @@ TagManager:
   - Audio
   - Dropdown
   - Gameover
+  - WhiteDuwende
   layers:
   - Default
   - TransparentFX
