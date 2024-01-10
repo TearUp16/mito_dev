@@ -16,9 +16,32 @@ public class EnemyAwarenessController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //put the enemy in a game object first
         _enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
 
-        Vector2 enemyToPlayerVector = _enemy.position - transform.position;
+        if (_enemy == null)
+        {
+            return;
+        }
+
+        if (_enemy = GameObject.FindGameObjectWithTag("Enemy").transform)
+        {
+            Vector2 enemyToPlayerVector = _enemy.position - transform.position;
+            DirectionToEnemy = enemyToPlayerVector.normalized;
+
+            if (enemyToPlayerVector.magnitude <= enemyAwarenessDistance)
+            {
+                AwareOfEnemy = true;
+            }
+            else
+            {
+                AwareOfEnemy = false;
+            }
+        }
+    }
+
+        /*Vector2 enemyToPlayerVector = _enemy.position - transform.position;
         DirectionToEnemy = enemyToPlayerVector.normalized;
 
         if (enemyToPlayerVector.magnitude <= enemyAwarenessDistance)
@@ -29,5 +52,5 @@ public class EnemyAwarenessController : MonoBehaviour
         {
             AwareOfEnemy = false;
         }
-    }
+    }*/
 }
