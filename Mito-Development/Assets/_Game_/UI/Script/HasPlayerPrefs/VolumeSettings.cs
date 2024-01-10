@@ -68,7 +68,7 @@ public class VolumeSettings : MonoBehaviour
     {
         minValue = 0.0001f;
         // Set the master volume of the mixer group
-        mixer.SetFloat("Music", mute ? Mathf.Log10(minValue)*20 : Mathf.Log10(musicVolume)*20);
+        mixer.SetFloat("SFX", mute ? Mathf.Log10(minValue)*20 : Mathf.Log10(sfxVolume)*20);
     }
 
     public void OnSFXMute(){

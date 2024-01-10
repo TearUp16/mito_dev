@@ -36,37 +36,19 @@ public class AudioManager : MonoBehaviour
         }
     }
     private void Start() {
-        int track = PlayerPrefs.GetInt("Track");
-            OnValueChanged(track);
-    }
-
-    public void OnValueChanged(int val)
-    {
-        switch (val)
-        {
-            case 0:
-            PlayerPrefs.SetInt("Track", val);
-            musicSource.clip = defaultBackground;
-            musicSource.Play();
-            break;
-            case 1:
-            PlayerPrefs.SetInt("Track", val); 
-            musicSource.clip = track1Background;
-            musicSource.Play();
-            break;
-            case 2: 
-            PlayerPrefs.SetInt("Track", val);
-            musicSource.clip = track2Background;
-            musicSource.Play();
-            break;
-        }
-        
+        musicSource.clip = defaultBackground;
+        musicSource.loop = true;
+        musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip){
         SFXSource.PlayOneShot(clip);
     }
     
-    
+    public void PlayMusic(AudioClip clip){
+        musicSource.clip = clip;
+        musicSource.loop = true;
+        musicSource.Play();
+    }
 
 }
