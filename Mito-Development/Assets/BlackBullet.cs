@@ -10,12 +10,17 @@ public class BlackBullet : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    public float destroyDelay = 10f; // Time delay before destroying the bullet
+    public int damage = 1;
 
     private void Start()
     {
+        Invoke("DestroyBullet", destroyDelay);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
     }
+
+    
 
     private void Update()
     {
@@ -33,7 +38,13 @@ public class BlackBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        DestroyBullet();
     }
 
+    void DestroyBullet()
+    {
+        // Destroy the bullet GameObject
+        Destroy(gameObject, destroyDelay);
+    }
 
 }
