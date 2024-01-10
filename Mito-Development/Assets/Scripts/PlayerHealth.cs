@@ -1,13 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 6;
-    public float currentHealth;
+    public int maxHealth = 100;
+    public int currentHealth;
     public bool isAlive = true;
     private Animator animator;
     EnemySpawner enemySpawner;
@@ -19,13 +17,13 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
     }
-
-    public void TakeDamage(float damageAmount)
+    public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
-        animator.SetTrigger("hit");
 
+        animator.SetTrigger("hit");
         
+
         // Check if the player is dead
         if (currentHealth <= 0)
         {
