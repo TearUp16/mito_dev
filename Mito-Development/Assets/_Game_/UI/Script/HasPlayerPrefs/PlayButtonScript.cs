@@ -19,8 +19,10 @@ public class PlayButtonScript : MonoBehaviour
            GoToCharacterSelection();
            //PlayerPrefs.SetString("PlayerHasPlayed", "false"); //temporary
         }else{
+            PlayerPrefs.SetInt("UnlockPanel0", 1);
             PlayerPrefs.SetString("PlayerHasPlayed", "true");
             PlayerPrefs.SetString("IntroHasPlayed", "false");
+            
             PlayStoryIntro();
            
         }
