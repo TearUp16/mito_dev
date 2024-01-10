@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 4389230023371754991, guid: d0e9fe2a0b5d4ce41ac5126a45b75637, type: 3}
   shootingPoint: {fileID: 4725101582116993510}
+  specialShootingPoint: {fileID: 0}
   _specialBulletPrefab: {fileID: 0}
 --- !u!1 &4534960645861302199
 GameObject:
@@ -243,11 +244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4599443507751612879, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.92
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4599443507751612879, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4599443507751612879, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -329,6 +330,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9cd4ba0670580e94b8d195b64f853e86, type: 2}
+    - target: {fileID: 9222461278762345992, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5430002950154482095, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
     m_RemovedGameObjects: []
