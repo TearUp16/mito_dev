@@ -16494,7 +16494,7 @@ PrefabInstance:
     - target: {fileID: 808376667759185350, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: enterNewHighScorePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1604238222}
     - target: {fileID: 1009174318496570758, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -16765,6 +16765,11 @@ PrefabInstance:
       addedObject: {fileID: 812928725}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
+--- !u!1 &1604238222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6150243183693659449, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
+  m_PrefabInstance: {fileID: 1551701604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1647088691
 GameObject:
   m_ObjectHideFlags: 0

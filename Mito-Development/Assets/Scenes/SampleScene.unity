@@ -9673,9 +9673,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1677200868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1326178130 stripped
+--- !u!1 &1329369677 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5823677561407105164, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6150243183693659449, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
   m_PrefabInstance: {fileID: 1836055351}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1370324791
@@ -13067,18 +13067,14 @@ PrefabInstance:
     - target: {fileID: 808376667759185350, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: enterNewHighScorePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329369677}
     - target: {fileID: 1080519355310757737, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: m_Name
       value: GameOverMenuPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 1080519355310757737, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2051054422451347501, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 1509709345840426673, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2759270377991454886, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -13201,14 +13197,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6394289087761765757, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394289087761765757, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394289087761765757, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.01389
       objectReference: {fileID: 0}
@@ -13260,14 +13248,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6491378583613482563, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: gameOverPrompt
-      value: 
-      objectReference: {fileID: 1326178130}
-    - target: {fileID: 6491378583613482563, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-      propertyPath: newHighScorePanel
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 9005280653114911642, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -13297,16 +13277,7 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6582018801801984810, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 2130747164477466003, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 156855340375530558, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 1018586702932082315, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 4109861699616823045, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 8234785606280924279, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 3840674214855177480, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 1913337108062914775, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
-    - {fileID: 2051054422451347501, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d27e8026161ff42b817bbe53ac6a7d, type: 3}

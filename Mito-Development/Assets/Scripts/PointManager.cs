@@ -12,5 +12,10 @@ public class PointManager : MonoBehaviour
     {
         score += points;
         scoreText.text = "Score: " + score;
+        SaveScore();
+    }
+
+    void SaveScore(){
+        PlayerPrefs.SetInt("CurrentScore", score);
     }
 }

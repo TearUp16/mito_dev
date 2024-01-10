@@ -15,11 +15,14 @@ public class LeaderBoardScript : MonoBehaviour
     String top_p1 = PlayerPrefs.GetString("Top1Player");
     String top_p2 = PlayerPrefs.GetString("Top2Player");
     [SerializeField] Button submitButton, anonymousButton;
-    [SerializeField] GameObject newHighScorePanel, highScoreManager, gameOverPrompt;
+    [SerializeField] GameObject newHighScorePanel, highScoreManager, gameOverPrompt, thisPanel;
     [SerializeField] TMP_InputField input;
+    private void Awake() {
+        score = PlayerPrefs.GetInt("CurrentScore");
+    }
 
-    void SetHighScore(int score, String player){
-        if(score > top1){
+    void SetHighScore(){
+        
             PlayerPrefs.SetInt("Top3Score", top2);
             PlayerPrefs.SetString("Top3Player",top_p2);
 
@@ -28,22 +31,22 @@ public class LeaderBoardScript : MonoBehaviour
 
             PlayerPrefs.SetInt("Top1Score", score);
             PlayerPrefs.SetString("Top1Player",player);
-
-            gameOverPrompt.SetActive(true);
-        }
+        
     }
     public void openHighScoreManager(){
         highScoreManager.SetActive(true);
     }
-    public void onSubmitButton(){
-        score = 0;
+    public void onSubmitButton(){    
         player = input.text;
-        SetHighScore(score, player);
+        SetHighScore();
+        gameOverPrompt.SetActive(true);
+        thisPanel.SetActive(false);
     }
     public void onAnonymousButton(){
-        score = 0;
         player = "Anonymous";
-        SetHighScore(score, player);
+        SetHighScore();
+        gameOverPrompt.SetActive(true);
+        thisPanel.SetActive(false);
         
     }
     

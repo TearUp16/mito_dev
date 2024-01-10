@@ -9,6 +9,12 @@ public class GameOverPrompt : MonoBehaviour
     //[SerializeField] GameObject[] unlockCharPanels,unlockStoryPanels;
     //int unlockPanel0,unlockPanel1,unlockPanel2,unlockPanel3,unlockPanel4, score;
     //int top1 = PlayerPrefs.GetInt("Top1Score");
+     int currentScore, highscore;
+     private void Awake() {
+        currentScore = PlayerPrefs.GetInt("CurrentScore");
+        highscore = PlayerPrefs.GetInt("Top1Score");
+
+    }
 
     private void Start() {
         //LoadPanel();
@@ -18,7 +24,13 @@ public class GameOverPrompt : MonoBehaviour
     }
     public void PanelChange(){
         currentPanel.SetActive(false);
-        nextPanel.SetActive(true);
+        if(currentScore > highscore){
+            enterNewHighScorePanel.SetActive(true);
+        }else{
+            nextPanel.SetActive(true);
+        }
+        
+        
     }
 
     // public void UnlockPanel(){

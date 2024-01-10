@@ -9,7 +9,7 @@ public class LeaderboardsPrompt : MonoBehaviour
     AudioManager audioManager;
     string p1,p2,p3;
     int s1,s2,s3;
-    [SerializeField] TMP_Text tp1,tp2,tp3,ts1,ts2,ts3;
+    [SerializeField] TextMeshProUGUI tp1,tp2,tp3,ts1,ts2,ts3;
     [SerializeField] GameObject leaderboardsPrompt;
 
     private void Awake() {
@@ -24,12 +24,13 @@ public class LeaderboardsPrompt : MonoBehaviour
         s2 = PlayerPrefs.GetInt("Top2Score");
         s3 = PlayerPrefs.GetInt("Top3Score");
 
-        tp1.SetText(p1);
-        tp2.SetText(p2);
-        tp3.SetText(p3);
-        ts1.SetText(s1.ToString());
-        ts2.SetText(s2.ToString());
-        ts3.SetText(s3.ToString());
+        tp1.text = p1;
+        tp2.text = p2;
+        tp3.text = p3;
+        
+        ts1.text = s1.ToString();
+        ts2.text = s2.ToString();
+        ts3.text = s3.ToString();
     }
     
     public void openLeaderBoards(){
