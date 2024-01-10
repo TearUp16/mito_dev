@@ -7,13 +7,12 @@ public class GameOverPrompt : MonoBehaviour
 {
     [SerializeField] GameObject gameOverPrompt, currentPanel, nextPanel;
 
-    public void OpenGameOverPanel(){
+    private void Start() {
         gameOverPrompt.SetActive(true);
-        Time.timeScale = 0;
-        
     }
     public void PanelChange(){
         currentPanel.SetActive(false);
         nextPanel.SetActive(true);
+
     }
 }

@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private Animator animator;
     EnemySpawner enemySpawner;
     GameOverPrompt gameOverPrompt;
+    [SerializeField]GameObject gameOver;
     // Start is called before the first frame update
     public void Start()
     {
@@ -36,9 +37,7 @@ public class PlayerHealth : MonoBehaviour
         // Perform any player death-related actions
         animator.SetTrigger("die");
         Destroy(gameObject, 0.5f);
-        
-        gameOverPrompt = GameObject.FindGameObjectsWithTag("Gameover")[0].GetComponent<GameOverPrompt>();
-        gameOverPrompt.OpenGameOverPanel();
+        gameOver.SetActive(true);
         // You might want to add more actions like game over screen, restart, etc.
     }
 }
