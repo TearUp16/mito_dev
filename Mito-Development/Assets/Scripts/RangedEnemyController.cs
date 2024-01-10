@@ -11,6 +11,7 @@ public class RangedEnemyController : MonoBehaviour
 
     private Transform player;
     private float lastAttackTime;
+    Vector2 direction;
 
     void Start()
     {
@@ -24,9 +25,9 @@ public class RangedEnemyController : MonoBehaviour
         if (distanceToPlayer <= attackDistance && Time.time - lastAttackTime >= attackCooldown)
         {
             // Set the enemy's distance to the player
-            Vector2 direction = (player.position - transform.position).normalized;
+            direction = (player.position - transform.position).normalized;
             // Optionally, you can add logic to rotate the enemy towards the player
-            transform.up = direction;
+            //transform.up = direction;
 
             // Shoot a bullet
             Shoot();
@@ -38,16 +39,16 @@ public class RangedEnemyController : MonoBehaviour
         lastAttackTime = Time.time;
 
         // Instantiate the bullet at the shoot point
-        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
 
         // Optionally, you can set additional properties for the bullet (e.g., speed, damage)
         // Access the BulletController script and set its properties
 
         // Example:
-        Bullet bulletController = bullet.GetComponent<Bullet>();
+        /*Bullet bulletController = bullet.GetComponent<Bullet>();
         if (bulletController != null)
         {
-            bulletController.SetBulletDirection(transform.up);
-        }
+            bulletController.SetBulletDirection(direction);
+        }*/
     }
 }

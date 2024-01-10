@@ -2111,7 +2111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &233256603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.01, z: -10}
+  m_LocalPosition: {x: 0.001, y: 0.045, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3144,6 +3144,17 @@ PrefabInstance:
       addedObject: {fileID: 1473842590}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
+--- !u!114 &569695224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8954404264255577355, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
+  m_PrefabInstance: {fileID: 2013734296263655044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cea51a81bf87f4086d10f0a608304f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &612661482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4883,7 +4894,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1677200873}
+      - m_Target: {fileID: 569695224}
         m_TargetAssemblyTypeName: PlayerShoot, Assembly-CSharp
         m_MethodName: FireBullets
         m_Mode: 1
@@ -5246,7 +5257,7 @@ Transform:
   m_GameObject: {fileID: 2082949540}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.01, z: -10}
+  m_LocalPosition: {x: 0.001, y: 0.045, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5390,13 +5401,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4534960645861302199, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
+      propertyPath: m_Name
+      value: ShootingPointA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725101582116993510, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725101582116993510, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.432
+      objectReference: {fileID: 0}
     - target: {fileID: 5445712752017705586, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 5445712752017705586, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.045
       objectReference: {fileID: 0}
     - target: {fileID: 5445712752017705586, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
       propertyPath: m_LocalPosition.z
