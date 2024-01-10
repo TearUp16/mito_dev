@@ -15,6 +15,7 @@ public class TitleScreenAnim : MonoBehaviour
     }
     
     private void Start() {
+         PlayerPrefs.SetInt("CurrentScore", 0);
         LeanTween.reset();
         LeanTween.moveLocal(buttonset1[0], new Vector3(-93.4f,14.7f,1), 0.5f).setEase(LeanTweenType.easeOutCirc);
         LeanTween.moveLocal(buttonset1[1], new Vector3(-93.4f,-9.336006f,1), 0.5f).setEase(LeanTweenType.easeOutCirc).setDelay(0.1f);

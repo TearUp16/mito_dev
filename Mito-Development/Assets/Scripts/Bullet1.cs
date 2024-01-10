@@ -14,6 +14,7 @@ public class Bullet1 : MonoBehaviour
 
     private PointManager pointManager;
     PlayerController playerController;
+    private ScoreTransition scoreTransition;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class Bullet1 : MonoBehaviour
         Invoke("DestroyBullet", destroyDelay);
 
         //Scoring
+        scoreTransition = GameObject.Find("Transition").GetComponent<ScoreTransition>();
         pointManager = GameObject.Find("PointManager").GetComponent<PointManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
     }
@@ -59,6 +61,8 @@ public class Bullet1 : MonoBehaviour
             playerHealth.TakeDamage(damage);
 
             pointManager.UpdateScore(5);
+            //scoreTransition.UpdateCurrentScore(5);
+            
             Destroy(gameObject);
         }
         //if (collision.gameObject.tag == "Enemy")

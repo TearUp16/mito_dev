@@ -9,6 +9,7 @@ TagManager:
   - Dropdown
   - Gameover
   - WhiteDuwende
+  - Transition
   layers:
   - Default
   - TransparentFX
