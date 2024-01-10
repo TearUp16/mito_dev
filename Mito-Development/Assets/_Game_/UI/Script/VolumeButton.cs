@@ -16,11 +16,10 @@ public class VolumeButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        
+        audioManager.PlaySFX(audioManager.buttonClick);
         if(isMuted){
             _img.sprite = _mutedpressed;
         }else{
-            audioManager.PlaySFX(audioManager.buttonClick);
             _img.sprite = _pressed;
         }
     }
@@ -28,7 +27,6 @@ public class VolumeButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
     {
         if(isMuted){
-            audioManager.PlaySFX(audioManager.buttonClick);
             _img.sprite = _default; 
             isMuted = false;
         }else{

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PauseScript : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-    [SerializeField] string Scene;
     
 
     public void Pause(){
@@ -18,8 +17,7 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1;
     }
     public void Restart(){
-        SceneManager.LoadScene(Scene);
-        pauseMenu.SetActive(false);
+        SceneManager.LoadScene("Apolaki");
         Time.timeScale = 1;
 
     }
@@ -28,7 +26,6 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1;
     }
     public void QuitToMenu(){
-        pauseMenu.SetActive(false);
         SceneManager.LoadScene("Title Screen Main");
         Time.timeScale = 1;
     }
