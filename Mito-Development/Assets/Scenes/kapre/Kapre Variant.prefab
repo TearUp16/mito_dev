@@ -39,6 +39,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71979233441393567, guid: f4b12c76a681cd04b95e8dc7e3fa7a9c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1178462625604092316, guid: f4b12c76a681cd04b95e8dc7e3fa7a9c, type: 3}
       propertyPath: shootPoint
       value: 
