@@ -5571,7 +5571,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   - {fileID: 7744478442523410691, guid: d6bd1994f20c8c3459ba40db96aefd0e, type: 3}
   numberOfEnemiesToSpawn: 5
-  miniBossSpawnPoint: {fileID: 0}
+  miniBossSpawnPoint: {fileID: 1479024938}
 --- !u!4 &839288923
 Transform:
   m_ObjectHideFlags: 0
@@ -5876,7 +5876,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   - {fileID: 7744478442523410691, guid: d6bd1994f20c8c3459ba40db96aefd0e, type: 3}
   numberOfEnemiesToSpawn: 5
-  miniBossSpawnPoint: {fileID: 0}
+  miniBossSpawnPoint: {fileID: 1479024938}
 --- !u!4 &1161394321
 Transform:
   m_ObjectHideFlags: 0
@@ -6265,7 +6265,7 @@ MonoBehaviour:
   - {fileID: 1086284618}
   - {fileID: 7744478442523410691, guid: d6bd1994f20c8c3459ba40db96aefd0e, type: 3}
   numberOfEnemiesToSpawn: 5
-  miniBossSpawnPoint: {fileID: 0}
+  miniBossSpawnPoint: {fileID: 1479024938}
 --- !u!4 &1375391546
 Transform:
   m_ObjectHideFlags: 0
@@ -6957,7 +6957,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1468104828
 RectTransform:
@@ -8034,7 +8034,7 @@ MonoBehaviour:
   - {fileID: 2025362937207674945, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
   - {fileID: 7744478442523410691, guid: d6bd1994f20c8c3459ba40db96aefd0e, type: 3}
   numberOfEnemiesToSpawn: 5
-  miniBossSpawnPoint: {fileID: 0}
+  miniBossSpawnPoint: {fileID: 1479024938}
 --- !u!4 &2008505545
 Transform:
   m_ObjectHideFlags: 0

@@ -11,23 +11,26 @@ public class EnemyAwarenessController : MonoBehaviour
     [SerializeField]
     private float enemyAwarenessDistance;
 
-    private Transform _enemy;
+    private Transform _enemyFound;
+    private GameObject _enemy;
 
     // Update is called once per frame
     void Update()
     {
 
+
         //put the enemy in a game object first
-        _enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        _enemy = GameObject.FindGameObjectWithTag("Enemy");
 
         if (_enemy == null)
         {
             return;
         }
 
-        if (_enemy = GameObject.FindGameObjectWithTag("Enemy").transform)
+        if (_enemy != null)
         {
-            Vector2 enemyToPlayerVector = _enemy.position - transform.position;
+            _enemyFound = _enemy.transform;
+            Vector2 enemyToPlayerVector = _enemyFound.position - transform.position;
             DirectionToEnemy = enemyToPlayerVector.normalized;
 
             if (enemyToPlayerVector.magnitude <= enemyAwarenessDistance)

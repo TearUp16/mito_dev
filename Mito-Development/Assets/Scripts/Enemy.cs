@@ -9,6 +9,10 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb;
 
     private Animator animator;
+    private GameObject player;
+    Vector2 playerPosition;
+    Vector2 direction;
+
 
     void Start()
     {
@@ -18,29 +22,36 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        // Enemy movement logic
-        Vector2 playerPosition = GameObject.FindWithTag("Player").transform.position;
-        Vector2 direction = playerPosition - (Vector2)transform.position;
-        direction.Normalize();
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
+        player = GameObject.FindWithTag("Player");
 
-        if (direction != Vector2.zero)
+        if (player == null)
         {
-            // Player is moving
-            animator.SetBool("isMoving", true);
-        }
-        else
+            return;
+        } else if (player != null)
         {
-            // Player is idle
-            animator.SetBool("isMoving", false);
-        }
-        if (direction.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (direction.x > 0)
-        {
-            spriteRenderer.flipX = false;
+            playerPosition = GameObject.FindWithTag("Player").transform.position;
+            direction = playerPosition - (Vector2)transform.position;
+            direction.Normalize();
+            GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+            if (direction != Vector2.zero)
+            {
+                // Player is moving
+                animator.SetBool("isMoving", true);
+            }
+            else
+            {
+                // Player is idle
+                animator.SetBool("isMoving", false);
+            }
+            if (direction.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (direction.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
     }      
 }
