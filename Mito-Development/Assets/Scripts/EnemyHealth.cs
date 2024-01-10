@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
     private Animator animator;
+
+    [SerializeField] GameObject Victory;
     public void Start()
     {
         currentHealth = maxHealth;
@@ -34,7 +36,13 @@ public class EnemyHealth : MonoBehaviour
     {
         animator.SetTrigger("die");
         // Perform any death animations or effects
-        Destroy(gameObject, 0.3f); // Destroy the enemy GameObject
+        Invoke("End", 1f);
+        Destroy(gameObject, 1f); // Destroy the enemy GameObject
+
+    }
+
+    void End(){
+        Victory.SetActive(true);
 
     }
 }
