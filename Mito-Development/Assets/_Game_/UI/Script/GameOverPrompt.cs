@@ -6,9 +6,6 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameOverPrompt : MonoBehaviour
 {
     [SerializeField] GameObject gameOverPrompt, currentPanel, nextPanel;
-    bool isDead = false;
-    
-    public int health;
 
     public void OpenGameOverPanel(){
         gameOverPrompt.SetActive(true);
