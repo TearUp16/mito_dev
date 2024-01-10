@@ -10,6 +10,8 @@ public class Bullet1 : MonoBehaviour
 
     public int damage = 40;
 
+    [SerializeField] int gainedPoints;
+
     private Vector2 direction;
 
     private PointManager pointManager;
@@ -60,7 +62,7 @@ public class Bullet1 : MonoBehaviour
         {
             playerHealth.TakeDamage(damage);
 
-            pointManager.UpdateScore(5);
+            pointManager.UpdateScore(gainedPoints);
             //scoreTransition.UpdateCurrentScore(5);
             
             Destroy(gameObject);

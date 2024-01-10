@@ -18,7 +18,7 @@ public class PointManager : MonoBehaviour
         score += points;
         scoreText.text = "Score: " + score;
         SaveScore();
-        if(score == targetScore){
+        if(score >= targetScore){
             Invoke("EnableTrans", 1f);
         }
 

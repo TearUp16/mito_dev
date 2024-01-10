@@ -65,7 +65,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: 1.45, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 427663060386304022}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDistance: 10
-  attackCooldown: 5
+  attackCooldown: 10
   bulletPrefab: {fileID: 4389230023371754991, guid: 0e0c0e0ced52d4142b2f056ef8129485, type: 3}
   shootPoint: {fileID: 427663060386304022}
 --- !u!95 &5352487146033070116
@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  Victory: {fileID: 0}
 --- !u!114 &4499691930129912639
 MonoBehaviour:
   m_ObjectHideFlags: 0

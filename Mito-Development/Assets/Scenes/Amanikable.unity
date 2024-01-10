@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  targetScore: 50
+  targetScore: 415
   scoreText: {fileID: 803481301}
   transition: {fileID: 1651785346}
 --- !u!4 &444868248
@@ -10721,7 +10721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRate: 20
-  miniBossPrefab: {fileID: 2025362937207674945, guid: 6d10981771440a14881ef86e75765802, type: 3}
+  miniBossPrefab: {fileID: 9050462121087896102, guid: 45498a871034dad40924102023def951, type: 3}
   numberOfEnemiesToSpawn: 1
 --- !u!4 &1479024940
 Transform:
@@ -19096,6 +19096,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 2146118321}
+    - target: {fileID: 845353806798183861, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4534960645861302199, guid: cd961eef6495471458c0afd02d2f0ab6, type: 3}
       propertyPath: m_Name
       value: ShootingPointA
@@ -19208,6 +19212,14 @@ PrefabInstance:
     - target: {fileID: 2128294176689816899, guid: 83bcab40336fa6044aaccc6a177fa1b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693332288254812038, guid: 83bcab40336fa6044aaccc6a177fa1b0, type: 3}
+      propertyPath: attackCooldown
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499691930129912639, guid: 83bcab40336fa6044aaccc6a177fa1b0, type: 3}
+      propertyPath: damageAmount
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7146598340480220149, guid: 83bcab40336fa6044aaccc6a177fa1b0, type: 3}
       propertyPath: m_SortingOrder
@@ -19388,7 +19400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9222461278762345992, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: maxHealth
-      value: 6
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9222461278762345992, guid: 8ec981553ed89c64ab69deb6308adce3, type: 3}
       propertyPath: livesUI.Array.size

@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     private Vector2 direction;
 
     private PointManager pointManager;
+    [SerializeField] int gainedPoints;
     private ScoreTransition scoreTransition;
     PlayerController playerController;
 
@@ -60,7 +61,7 @@ public class Bullet : MonoBehaviour
         {
             enemyHealth.TakeDamage(damage);
             //scoreTransition.UpdateCurrentScore(5);
-            pointManager.UpdateScore(5);
+            pointManager.UpdateScore(gainedPoints);
             Destroy(gameObject);
         }
         //if (collision.gameObject.tag == "Enemy")

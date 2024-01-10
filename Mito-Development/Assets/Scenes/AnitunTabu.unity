@@ -6808,7 +6808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  targetScore: 50
+  targetScore: 615
   scoreText: {fileID: 803481301}
   transition: {fileID: 430420018}
 --- !u!4 &444868248
@@ -7069,7 +7069,7 @@ PrefabInstance:
     - target: {fileID: 5600106099251867131, guid: f5fa0314f0acd604cb969258a49ccc9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1677200873}
+      objectReference: {fileID: 772616192}
     - target: {fileID: 5600106099251867131, guid: f5fa0314f0acd604cb969258a49ccc9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: FireBullets
@@ -7387,6 +7387,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f7cdd1884d4bf4caf6e48904f5c82b, type: 3}
+--- !u!114 &772616192 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8424341903779591260, guid: 072e059e8c2041c4aa34f94ec7fb4209, type: 3}
+  m_PrefabInstance: {fileID: 1114136927126735832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cea51a81bf87f4086d10f0a608304f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &795093666
 GameObject:
   m_ObjectHideFlags: 0
@@ -7627,7 +7638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbd750c6959b3048971f3a9519cbd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 4
   enemyPrefabs:
   - {fileID: 2285150409950305144, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
   numberOfEnemiesToSpawn: 5
@@ -10467,7 +10478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbd750c6959b3048971f3a9519cbd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 3
   enemyPrefabs:
   - {fileID: 2285150409950305144, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
   numberOfEnemiesToSpawn: 5
@@ -11960,7 +11971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbd750c6959b3048971f3a9519cbd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 5
   enemyPrefabs:
   - {fileID: 2285150409950305144, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
   numberOfEnemiesToSpawn: 5
@@ -12535,7 +12546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRate: 20
-  miniBossPrefab: {fileID: 2025362937207674945, guid: 6d10981771440a14881ef86e75765802, type: 3}
+  miniBossPrefab: {fileID: 2183078901495896652, guid: d3f9da94182fc4946b892f3a017b010d, type: 3}
   numberOfEnemiesToSpawn: 1
 --- !u!4 &1479024940
 Transform:
@@ -19182,9 +19193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbd750c6959b3048971f3a9519cbd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 4
   enemyPrefabs:
-  - {fileID: 2285150409950305144, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
+  - {fileID: 2183078901495896652, guid: f4b12c76a681cd04b95e8dc7e3fa7a9c, type: 3}
   numberOfEnemiesToSpawn: 5
   miniBossSpawnPoint: {fileID: 1479024938}
 --- !u!4 &1960568336
@@ -19448,6 +19459,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1077406762}
+    - target: {fileID: 6166461296661540566, guid: 072e059e8c2041c4aa34f94ec7fb4209, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19540,11 +19555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9198311069194294301, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9198311069194294301, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9198311069194294301, guid: 8d754e38f685f9343a01c2b6ffc7bde5, type: 3}
       propertyPath: m_LocalPosition.x

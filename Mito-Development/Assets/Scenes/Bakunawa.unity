@@ -7715,7 +7715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  targetScore: 15
+  targetScore: 815
   scoreText: {fileID: 803481301}
   transition: {fileID: 1362454174}
 --- !u!4 &444868248
@@ -7976,7 +7976,7 @@ PrefabInstance:
     - target: {fileID: 5600106099251867131, guid: f5fa0314f0acd604cb969258a49ccc9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1677200873}
+      objectReference: {fileID: 1473842591}
     - target: {fileID: 5600106099251867131, guid: f5fa0314f0acd604cb969258a49ccc9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: FireBullets
@@ -14959,6 +14959,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3643762571431251522, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
+      propertyPath: maxHealth
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 4382484137259088527, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4
@@ -14969,11 +14973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8938242018316048164, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8938242018316048164, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8938242018316048164, guid: 03c47daac0cc952498d3d3df0d4eaa49, type: 3}
       propertyPath: m_LocalPosition.x
